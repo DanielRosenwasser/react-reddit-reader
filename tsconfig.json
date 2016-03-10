@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "jsx": "react"
+    },
+    "files": [
+        "./typings/main.d.ts",
+        "./src/reddit.ts",
+        "./src/components/RedditSubmission.tsx",
+        "./src/index.tsx"
+    ]
+}
