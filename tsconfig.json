@@ -2,9 +2,10 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": true,
+        "outDir": "./built/",
+        "jsx": "react",
         "sourceMap": true,
-        "jsx": "react"
+        "noImplicitAny": true
     },
     "files": [
         "./typings/main.d.ts",
