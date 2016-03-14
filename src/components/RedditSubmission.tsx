@@ -20,7 +20,7 @@ export const SubmissionComp = (submission: SubmissionProps) =>
         </span>
         <span> ({submission.domain})</span>
 
-        <div>Submitted by {submission.author}.</div>
+        <div>Submitted at {new Date(submission.created_utc).toLocaleTimeString()}.</div>
         <br />
         <img src={submission.url} style={imageStyle} />
     </div>;

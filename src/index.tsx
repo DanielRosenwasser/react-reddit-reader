@@ -16,7 +16,7 @@ function displaySubreddit(subreddit: string) {
         let components = submissions
             .map((value, index) => <SubmissionComp key={index} elementPosition={index} {...value.data} />);
         
-        ReactDOM.render(<div>{components}</div>, document.getElementById("content"))
+        ReactDOM.render(<div>{components}</div>, document.getElementById("content"));
     });
 }
 
