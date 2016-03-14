@@ -3,7 +3,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import { ApiResponse } from "./reddit";
-import { SubmissionComp } from "./components/RedditSubmission"
+import { SubmissionComponent } from "./components/RedditSubmission"
 
 function displaySubreddit(subreddit: string) {
     jQuery.ajax({ url: `https://www.reddit.com/r/${subreddit}.json` }).done((response: ApiResponse) => {
@@ -14,7 +14,7 @@ function displaySubreddit(subreddit: string) {
         
         // Create our list of components.
         let components = submissions
-            .map((value, index) => <SubmissionComp key={index} elementPosition={index} {...value.data} />);
+            .map((value, index) => <SubmissionComponent key={index} elementPosition={index} {...value.data} />);
         
         ReactDOM.render(<div>{components}</div>, document.getElementById("content"));
     });

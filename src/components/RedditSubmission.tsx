@@ -10,7 +10,7 @@ let imageStyle = {
     maxHeight: "600px",
 };
 
-export const SubmissionComp = (submission: SubmissionProps) =>
+export const SubmissionComponent = (submission: SubmissionProps) =>
     <div>
         {submission.elementPosition ? <br /> : ""}
         
@@ -20,7 +20,10 @@ export const SubmissionComp = (submission: SubmissionProps) =>
         </span>
         <span> ({submission.domain})</span>
 
-        <div>Submitted at {new Date(submission.created_utc).toLocaleTimeString()}.</div>
+        <div>
+            Submitted at {new Date(submission.created_utc).toLocaleTimeString()}.
+        </div>
+
         <br />
         <img src={submission.url} style={imageStyle} />
     </div>;
