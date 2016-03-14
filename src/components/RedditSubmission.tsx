@@ -11,10 +11,10 @@ let imageStyle = {
 };
 
 export const SubmissionComp = (submission: SubmissionProps) =>
-    <div style={{ fontFamily: "sans-serif" }}>
-        { submission.elementPosition ? <br /> : "" }
+    <div>
+        {submission.elementPosition ? <br /> : ""}
         
-        <span style={{ fontSize: "1.2rem" }}>
+        <span className="title">
             <span>{submission.elementPosition + 1}. </span>
             <a href={submission.url}>{submission.title}</a>
         </span>
