@@ -1,0 +1,22 @@
+.container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 22px;
+}
+
+.title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 12px 0px 16px;
+  margin: 0;
+  color: #123456;
+  text-align: left;
+}
+
+img {
+  max-width: 600px;
+  max-height: 600px;
+}
